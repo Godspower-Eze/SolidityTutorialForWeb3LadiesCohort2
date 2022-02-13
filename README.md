@@ -24,4 +24,4 @@
 
 ## Resources
 
-[Solidity Types](https://www.bitdegree.org/learn/solidity-types)
+- [Solidity Types](https://www.bitdegree.org/learn/solidity-types)
