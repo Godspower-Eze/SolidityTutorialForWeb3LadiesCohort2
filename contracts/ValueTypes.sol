@@ -35,4 +35,45 @@ contract ValueType{
     bool testBool = true;
     bool testBool1 = false;
 
+    // address and address payable
+    // a 20-byte hexadecimal number
+    // Hex: 123456789ABCDEF
+    address testAddr = 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4;
+
+    address payable testAddr2 = payable(0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2);
+
+    // bytes1, bytes2, bytes3 => bytes32
+
+    bytes1 public testBytes = "W"; 
+    bytes2 public testBytes1 = "er";
+    bytes32 public testBytes32 = "FGGGSS";
+
+    enum UserType {
+        ADMIN,
+        SUBADMIN,
+        NORMALUSER
+    }
+
+    // function testEnums() external pure returns(UserType, UserType, UserType){
+    //     UserType admin = UserType.ADMIN;
+    //     UserType subadmin = UserType.SUBADMIN;
+    //     UserType normaluser = UserType.NORMALUSER;
+    //     return (admin, subadmin, normaluser);
+    // }
+    // function seeAttributes(address addr) external view returns(uint){
+    //     uint balance = addr.balance;
+    //     return balance;
+    // }
+
+    // function seeContractAddressAndBalance() external view returns(address, uint){
+    //     address contractAddress = address(this);
+    //     uint balance = contractAddress.balance;
+    //     return (contractAddress, balance);
+    // }
+
+    // let stringNum = "12"
+    // let toInt = parseInt(stringNum)
+
+    // 1 ether = 1,000,000,000,000,000,000 wei
+    // 1 ether = 1,000,000,000 gwei
 }
